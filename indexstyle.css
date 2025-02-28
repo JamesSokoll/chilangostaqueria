@@ -1,11 +1,11 @@
 /* Importing fonts */
 @font-face {
     font-family: 'Don Graffiti';
-    src: url(/font/DonGraffiti.otf) format('opentype');
+    src: url(font/DonGraffiti.otf) format('opentype');
 }
 @font-face {
     font-family: 'Gothamic';
-    src: url(/font/Gothamic.ttf) format('truetype');
+    src: url(font/Gothamic.ttf) format('truetype');
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 body {
-    background-image: url('/Images/background/GrayBackground.jpg');
+    background-image: url('Images/background/GrayBackground.jpg');
     background-position: center ;
     font-family: 'Gothamic', sans-serif;
     flex-direction: column;
@@ -146,7 +146,7 @@ body {
 
 
 .containerwtxt{
-    background-image: url('/Images/background/OrangeBackground.jpg');
+    background-image: url('Images/background/OrangeBackground.jpg');
     background-position: center;
 
 }
@@ -202,7 +202,7 @@ body {
 }
 
 .business-info{
-    background-image: url('/Images/background/GrayBackground.jpg');
+    background-image: url('Images/background/GrayBackground.jpg');
     background-position: center;
     color: #F7F7F7;
     display: flex;
@@ -237,7 +237,7 @@ margin: 0 auto; /* Center the map */
 
 
 footer {
-    background-image: url('/Images/background/OrangeBackground.jpg');
+    background-image: url('Images/background/OrangeBackground.jpg');
     background-position: center;
 }
 
