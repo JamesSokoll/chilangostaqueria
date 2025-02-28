@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Define background images for each menu section
     const backgroundImages = {
-        "Tacos": "/Images/background/taco.jpg",
-        "Burritos": "/Images/background/burrito.jpg",
-        "Tortas": "/Images/background/torta.jpg",
-        "Quesadillas": "/Images/background/quesadilla.jpg",
-        "Tostadas": "/Images/background/tostada.jpg",
-        "Specials": "/Images/background/specials.jpg",
-        "Drinks": "/Images/background/drinks.jpg"
+        "Tacos": "Images/background/taco.jpg",
+        "Burritos": "Images/background/burrito.jpg",
+        "Tortas": "Images/background/torta.jpg",
+        "Quesadillas": "Images/background/quesadilla.jpg",
+        "Tostadas": "Images/background/tostada.jpg",
+        "Specials": "Images/background/specials.jpg",
+        "Drinks": "Images/background/drinks.jpg"
     };
 
     menuTabs.forEach(tab => {
