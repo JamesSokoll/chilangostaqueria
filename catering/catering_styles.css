@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Don Graffiti';
+    src: url(/font/DonGraffiti.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Gothamic';
+    src: url(/font/Gothamic.ttf) format('truetype');
+}
+
+/* Chilango's Theme Colors */
+:root {
+    --ChilangosOrange: #ef5b30;
+    --ChilangosLightOrange: #ED7D27;
+    --ChilangosBlack: #141414;
+    --ChilangosGray: #41423A;
+    --ChilangosWhite: #F7F7F7;
+    --ChilangosOffWhite: #ECE2D2;
+    --ChilangosYellow: #FFC247;
+}
+
+/* Reset and Base Styles */
+body {
+    font-family: 'Gothamic', sans-serif;
+    background-image: url(/Images/background/OrangeBackground.jpg);
+    background-position: center;
+    color: var(--ChilangosBlack);
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography Updates */
+h1, h2, h3, h4 {
+    font-family: 'Don Graffiti', sans-serif;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 2.5em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1.8em; }
+p { font-size: 1.4em; }
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--ChilangosWhite);
+}
+
+.hero h1 {
+    font-size: 6.5em;
+    margin-top: 30px;
+}
+
+.hero p {
+    margin-top: 25px;
+    font-size: 2.5em;
+    font-style: bold;
+}
+
+/* Media Section (TikTok and Text) */
+.tiktok {
+    background-image: url(/Images/background/OrangeBackground.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.tiktokvideo {
+    background-color: var(--ChilangosOffWhite);
+    flex: 1;
+    max-width: 350px; /* Increased width */
+}
+
+.tiktext {
+    flex: 1;
+    background: var(--ChilangosOffWhite);
+    font-size: 30px;
+    text-align: center;
+    color: var(--ChilangosBlack);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.tikimage{
+    height: 750px;
+    max-width: 350px;
+    border: 6px solid var(--ChilangosWhite);
+}
+
+/* Contact Section */
+.contact .media-item {
+    width: 100%; /* Make images take full width of their container */
+    max-width: 500px; /* Increase max width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    border: 6px solid var(--ChilangosWhite);
+}
+
+/* Adjust flexbox behavior so images take more space */
+.contact {
+    background-image: url(/Images/background/GrayBackground.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center elements */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 40px;
+    border: 5px;
+}
+
+.contact div {
+    color: var(--ChilangosWhite);
+    flex: 1;
+    min-width: 15%; /* Ensure minimum size */
+    max-width: 25%;
+    text-align: center;
+}
+
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.4em;
+}
+
+.contact a {
+    color: var(--ChilangosLightOrange);
+    text-decoration: none;
+}
+
+.contact-btn {
+    display: inline-block;
+    background: var(--ChilangosBlack);
+    color: var(--ChilangosWhite);
+    padding: 18px 28px;
+    font-size: 1.4em;
+    border-radius: 5px;
+    margin-top: 25px;
+    transition: background 0.3s;
+}
+
+.contact-btn:hover {
+    background: var(--ChilangosLightOrange);
+}
+footer{
+    background-image: url(/Images/background/GrayBackground.jpg);
+    background-position: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .tiktok {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tiktokvideo, .tiktext {
+        max-width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414; /* Adjust to match your design */
+    color: #F7F7F7;
+    padding: 15px 30px;
+    font-size: 16px;
+}
+
+.footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.social-icons a {
+    margin-left: 10px; /* Adds spacing between icons */
+}
+
+.social-icons img {
+    filter: brightness(0) invert(1); /* Ensures icons appear in white if needed */
+}

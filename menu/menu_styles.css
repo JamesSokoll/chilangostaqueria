@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Don Graffiti';
+    src: url(/font/DonGraffiti.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Gothamic';
+    src: url(/font/Gothamic.ttf) format('truetype');
+}
+/* General Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Gothamic', sans-serif;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    padding-top: 60px; 
+    background-image: url('/Images/background/GrayBackground.jpg');
+    background-position: center;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures text and price align properly */
+    width: 100%;
+    padding: 10px 0; /* Adds spacing for consistency */
+    font-size: 1.1em; /* Adjust for readability */
+}
+
+
+.spanish {
+    font-weight: bold;
+}
+
+.english {
+    font-style: italic;
+     /* Optional: Different color for English text */
+}
+
+.description {
+    margin-top: 5px;
+}
+
+.spanish-desc {
+    font-weight: normal;
+    display: block;
+}
+
+.english-desc {
+    font-style: italic;
+    display: block;
+}
+
+
+
+/* Menu Container */
+.menu-container {
+    display: flex;
+    width: 75%; /* Set the width to 100% of the viewport or container */
+    height: 75vh; /* Set the height to 100% of the viewport */
+    margin: 20px auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 2px solid #ECE2D2;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar Navigation */
+.item-type-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+.item-type {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.item-type:hover {
+    background: #ff6600;
+}
+
+.item-type h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Menu Content */
+.menulist {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    width: 75%; /* Set the width to 100% of the viewport or container */
+    height: 75vh;
+    font-size: 1rem; /* Adjust font size for readability */
+}
+
+
+
+.menucontent {
+    display: none;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.menucontent h3 {
+
+    color: #ff6600;
+    border-bottom: 3px solid #222;
+    padding-bottom: 5px;
+}
+
+.list-container {
+    margin-top: 10px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 15px;
+
+}
+
+/* Active Content */
+.active {
+    display: block !important;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414; /* Adjust to match your design */
+    color: #F7F7F7;
+    padding: 15px 30px;
+    font-size: 16px;
+    position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+
+}
+
+.footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.social-icons a {
+    margin-left: 10px; /* Adds spacing between icons */
+}
+
+.social-icons img {
+    filter: brightness(0) invert(1); /* Ensures icons appear in white if needed */
+} 

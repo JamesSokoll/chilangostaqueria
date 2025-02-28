@@ -1,0 +1,288 @@
+/* Importing fonts */
+@font-face {
+    font-family: 'Don Graffiti';
+    src: url(/font/DonGraffiti.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Gothamic';
+    src: url(/font/Gothamic.ttf) format('truetype');
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Don Graffiti', sans-serif; 
+}
+
+#auth {
+    font-size: clamp(34px, 10vw, 80px); /* Adjusts dynamically */
+    color: #F7F7F7;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px; /* Pushes text down */
+    margin-bottom: 20px;
+}
+
+
+
+body {
+    background-image: url('/Images/background/GrayBackground.jpg');
+    background-position: center ;
+    font-family: 'Gothamic', sans-serif;
+    flex-direction: column;
+    border: 5px solid black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-around; /* Center content */
+    align-items: center; /* Align vertically */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 20px; /* Space between items */
+    margin-bottom: 20px;
+}
+
+
+/* Ensure images are the same size and responsive */
+.hero-content img {
+    max-width: 100%; /* Ensure images do not exceed their container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the whole image fits without distortion */
+}
+
+
+
+.orderup {
+    color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+}
+
+
+.orderup h2 {
+    font-family: 'Gothamic', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+#tel{
+    color: #FFC247;
+
+}
+
+#tel:hover{
+    color: #1E857F;
+
+}
+
+
+.deliver {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #F7F7F7; /* Border around images */
+    border-radius: 10px; /* Makes the image a circle */
+    justify-content: space-between; /* Center the image */
+}
+
+/* Specific styles for truck and logo */
+#truck img,
+.Knife img {
+    width: 100%;
+    max-width: 600px; /* Set a max width to keep consistency */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures images fill their containers */
+    border: 3px solid #F7F7F7; /* Border around the images */
+    border-radius: 10px; /* Adds rounded corners */
+    
+}
+
+
+/* Media query for mobile adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Stack elements on mobile */
+        text-align: center;
+    }
+
+    #truck img, .Knife img {
+        width: 90%; /* Adjust size for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+
+
+.order-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff6600, #ff3300);
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(255, 102, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Hover effects */
+.order-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 102, 0, 0.6);
+    background: linear-gradient(45deg, #ff3300, #ff6600);
+}
+
+
+
+.containerwtxt{
+    background-image: url('/Images/background/OrangeBackground.jpg');
+    background-position: center;
+
+}
+
+#OurFood {
+    font-size: 80px;
+    text-align: center; /* Ensures text is centered */
+    display: block; /* Ensures it behaves as a block element */
+    width: 100%; /* Takes up full width to center properly */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the carousel */
+    align-items: center;
+    width: auto; /* Allow container to shrink to fit content */
+    max-width: 100vw; /* Prevents it from stretching too much */
+    overflow: hidden; /* Hides any excess space */
+    padding: 10px; /* Optional: adjust for spacing */
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    min-width: 200px; /* Prevents images from collapsing too much */
+}
+
+.panel.active {
+    flex: 5; /* Expands the active panel */
+}
+
+@media (max-width: 768px) {
+    .panel {
+        height: 50vh; /* Adjust height for smaller screens */
+    }
+}
+
+
+/* Business Info Section */
+.business-time {
+    display: flex;
+    background-color: #141414;
+    justify-content: space-between;
+}
+
+.business-info{
+    background-image: url('/Images/background/GrayBackground.jpg');
+    background-position: center;
+    color: #F7F7F7;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vw 3vw; /* Adds some padding */
+    text-align: center;
+}
+
+.location iframe {
+margin: 0 auto; /* Center the map */
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: xx-large;
+}
+#getdir{
+    color: #FFC247;
+    
+}
+#getdir:hover{
+    color: #1E857F;
+    
+}
+.hours{
+  font-size: xxx-large;
+}
+
+
+footer {
+    background-image: url('/Images/background/OrangeBackground.jpg');
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .business-info {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center;
+        text-align: center;
+    }
+
+    .location, .hours {
+        width: 100%; /* Full width to avoid squishing */
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    .location iframe {
+        width: 90%; /* Make Google Maps iframe fit smaller screens */
+        height: 250px;
+    }
+
+    .hours {
+        font-size: x-large; /* Reduce font size for better fit */
+    }
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414; /* Adjust to match your design */
+    color: #F7F7F7;
+    padding: 15px 30px;
+    font-size: 16px;
+}
+
+.footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.social-icons a {
+    margin-left: 10px; /* Adds spacing between icons */
+}
+
+.social-icons img {
+    filter: brightness(0) invert(1); /* Ensures icons appear in white if needed */
+}

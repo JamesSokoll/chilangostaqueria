@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Don Graffiti';
+    src: url(/font/DonGraffiti.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Gothamic';
+    src: url(/font/Gothamic.ttf) format('truetype');
+
+}
+
+body {
+    font-family: 'Gothamic', sans-serif;
+    flex-direction: column;
+    border: 5px solid black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navbar container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding for spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo alignment */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Centered navigation links */
+.nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: orange;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Right-aligned social media icons */
+.navsocial {
+    display: flex;
+    gap: 15px;
+    margin-right: 20px; /* Ensures spacing from the edge */
+    overflow: hidden; /* Prevents elements from going out of bounds */
+    max-width: 100%; /* Ensures it fits within the navbar */
+    flex-wrap: nowrap; /* Prevents items from breaking into new lines */
+}
+
+.navsocial img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    object-fit: contain; /* Ensures the full icon is displayed */
+}
+
+
+/* Style the hamburger menu button */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: orange;
+    padding: 10px;
+    position: absolute;
+    right: 20px; /* Ensures proper spacing from the right edge */
+    top: 50%;
+    transform: translateY(-50%); /* Centers it vertically */
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    /* Ensure the hamburger menu appears on mobile and is centered */
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%) translateY(-50%);
+    }
+}
+
+
+
+

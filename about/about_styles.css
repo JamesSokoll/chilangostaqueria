@@ -1,0 +1,111 @@
+/* Chilangos Taqueria About Page Styles */
+:root {
+    --ChilangosOrange: #ef5b30;
+    --ChilangosLightOrange: #ED7D27;
+    --ChilangosBlack: #141414;
+    --ChilangosGray: #41423A;
+    --ChilangosWhite: #F7F7F7;
+    --ChilangosOffWhite: #ECE2D2;
+    --ChilangosYellow: #FFC247;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('/Images/background/GrayBackground.jpg');
+    background-position: center;
+    color: var(--ChilangosBlack);
+    margin: 0;
+    padding: 0;
+}
+
+.about-container {
+    max-width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.owner-section, .mascot-section , .family-section, .contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    background: var(--ChilangosOffWhite);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Flip order for mascot */
+.mascot-section {
+    flex-direction: row-reverse;
+}
+
+/* Image styles */
+.owner-section img, .mascot-section img , .family-section img{
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Flip margin for mascot */
+.mascot-section img {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+/* Text styles */
+.text {
+    max-width: 60%;
+}
+
+h2 {
+    color: var(--ChilangosOrange);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--ChilangosGray);
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.text a {
+    color: var(--ChilangosLightOrange);
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414; /* Adjust to match your design */
+    color: #F7F7F7;
+    padding: 15px 30px;
+    font-size: 16px;
+}
+
+.footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.social-icons a {
+    margin-left: 10px; /* Adds spacing between icons */
+}
+
+.social-icons img {
+    filter: brightness(0) invert(1); /* Ensures icons appear in white if needed */
+}
