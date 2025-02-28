@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Don Graffiti';
-    src: url(/font/DonGraffiti.otf) format('opentype');
+    src: url(font/DonGraffiti.otf) format('opentype');
 }
 @font-face {
     font-family: 'Gothamic';
-    src: url(/font/Gothamic.ttf) format('truetype');
+    src: url(font/Gothamic.ttf) format('truetype');
 
 }
 
