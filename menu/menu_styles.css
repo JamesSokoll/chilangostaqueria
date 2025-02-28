@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Don Graffiti';
-    src: url(/font/DonGraffiti.otf) format('opentype');
+    src: url(font/DonGraffiti.otf) format('opentype');
 }
 @font-face {
     font-family: 'Gothamic';
-    src: url(/font/Gothamic.ttf) format('truetype');
+    src: url(font/Gothamic.ttf) format('truetype');
 }
 /* General Styling */
 html, body {
@@ -19,7 +19,7 @@ body {
     height: 100vh; /* Full height of the viewport */
     margin: 0;
     padding-top: 60px; 
-    background-image: url('/Images/background/GrayBackground.jpg');
+    background-image: url('/mages/background/GrayBackground.jpg');
     background-position: center;
 }
 .menu-item {
